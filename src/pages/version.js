@@ -3,5 +3,11 @@ export function GET({ params, request }) {
     JSON.stringify({
       current: "0.0.12",
     }),
+    {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    },
   );
 }
